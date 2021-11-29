@@ -2,25 +2,45 @@
 <html>
 <head>
    <title> Jasmin Cimone | Home &copy; </title>
-   <nav id="navlist">
-    <a href="index.html"> Home </a>
-    <a href="stories.html"> Music </a>
-    <a href="#"> The Fix </a>
-    <a href="#"> Merch </a>
+   <nav class="crumbs">
+    <ul>
+    <li class="crumbs"><a href="index.html"> Home |</a></li>
+    <li class="crumbs"><a href="stories.html"> Music |</a></li>
+    <li class="crumbs"><a href="#"> The Fix |</a></li>
+    <li class="crumbs"><a href="#"> Merch </a></li>
+    </ul>
 </nav>
 </head>
 
 <style>
-        h1{
-            color: white;
-            font-family: cursive;
-            font-weight: 500px;
-            text-align: center;
-            text-decoration: underline;
+    h1{
+        color: white;
+        font-family: cursive;
+        font-weight: 500px;
+        text-align: center;
+        text-decoration: underline;
+       
+    }
+    nav{
+        display: block;    
+        font-size: 30pt;
+        border: 1px solid white;
         }
-        nav{
-            font-size: 20pt;
-        }
+    .crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+    }
+    .crumbs {
+    display: inline-block;
+    }
+    .crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+    }
         body{
             color: white; 
             background-color: black;
@@ -32,18 +52,11 @@
         li{
             list-style-type: none;
         }
-        
         p{
-            color: blueviolet;
+            color: black;
             font-size: 16pt;
             text-align: center;
         }    
-        a{
-            color: purple;
-            font-size: 15pt;
-            text-decoration: underline;
-            text-align: center;
-        }
         .center {
             color: white;
             margin-left: auto;
@@ -52,35 +65,89 @@
         .name {           
             text-decoration: underline white;
         }
-        #navlist{
-            color: red
-            font-size: 40pt;
+        .link {
+           color: blueviolet
+
         }
+        div {
+            background-color: white;
+            width: 450px; height: 270px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        span{
+            color: salmon;
+            font-size: 40pt;
+            font-family: Lucida Sans;
+        }
+        #div1{
+            background-color: white; 
+            border: 5px dotted salmon;
+        }
+        #div2{
+            background-color: salmon;
+            width: 450px; height: 328px;
+            border: 5px double white;
+        }
+        form{
+            padding: 15px;
+            background-color: black;
+            font-style: bold;
+            border: 10px double salmon;
+            font-weight: 900px;
+        
+        }
+        input[type=button] {
+            color: black;
+            background-color: white;
+            text-align: cente
+            padding: 5px;
+        }
+
 </style> 
   
 <body>
-    <h1 class= "name"> Jasmin Cimone | Neon Daydreams </h1>
+    <h1 class= "name"> <span>J</span>asmin <span>C</span>imone | <span>N</span>eon <span>D</span>aydreams </h1>
     <h2 class > A New Era Of Nurturing Daydreams. </h2>
 
-    <p> What's a dream that you've been letting pass you by? <br>
+<div id="div1">
+    <p> <br>What's a dream that you've been letting pass you by? <br>
         My goal with Neon Daydreams is to nurture the nature of <br>
         artists, entrepreneurs & small businesses alike <br>
         in order to cultivate the ideas that they bring to me, <br>
         from the inception of a daydream into an everyday reality. <br>
     </p>
+</div> <br><br>
     
-    <img src="https://d1fdloi71mui9q.cloudfront.net/ViiIHekeTlL4aoBAiK3E_9AF25384-B7FB-4138-9C98-DBB4E22E6CFC.jpeg"> <br><br>
+<div id="div2"> <img src="https://d1fdloi71mui9q.cloudfront.net/ViiIHekeTlL4aoBAiK3E_9AF25384-B7FB-4138-9C98-DBB4E22E6CFC.jpeg"> <br><br>
     
-    <a href="https://linktr.ee/JasminCimone"> <i>Linktr.ee</i></b></a><br><br>
+    <a href="https://linktr.ee/JasminCimone" class= "link"> <i>Linktr.ee</i></b></a><br><br>
+
+    <form>
+        <h3>Contact Me!</h3>
+        First Name: <br>
+        <input type= "text" name="first name"><br>
+        Last Name: <br>
+        <input type= "text" name="last name"><br>
+        Email: <br>
+        <input type= "text" name="email"><br>
+        Select Service<br>
+        <input type= "radio" name="select service" value="Music"> Music <br>
+        <input type= "radio" name="select service" value="Graphic Design"> Graphic Design <br>
+        <input type= "radio" name="select service" value="Brand Dev/Marketing"> Brand Dev/Marketing <br>
+        <input type= "button" name="submit" value="submit"> 
+    </form>
     
-   <img src="https://m.media-amazon.com/images/I/81V89kelAfL._AC_SL1500_.jpg" alt="NDP" width="400" height="350" class="center"></br>
-    <a href="https://m.media-amazon.com/images/I/81V89kelAfL._AC_SL1500_.jpg">HeadInTheClouds.com</a>
+   <img src="https://m.media-amazon.com/images/I/81V89kelAfL._AC_SL1500_.jpg" alt="NDP" width="400" height="350" class="center"><br><br>
+    
+   <a href= "https://m.media-amazon.com/images/I/81V89kelAfL._AC_SL1500_.jpg" class= "link"> HeadInTheClouds.com </a>
     <!--Closing Tag for NDProductions-->
 <ul>
-    <li> <a href="#"> Music/Songwriting</a> </li>
-    <li> <a href="#"> Graphic Design</a></li>
-    <li> <a href="#"> Brand Development/Marketing</a></li>
+    <li> <a href= "#" class= "link"> Music/Songwriting </a> </li>
+    <li> <a href= "#" class= "link"> Graphic Design </a></li>
+    <li> <a href= "#" class= "link"> Brand Development/Marketing </a></li>
 </ul>
+</div>
 </body> 
 </head>
 </html>
